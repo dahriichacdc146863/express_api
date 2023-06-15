@@ -6,10 +6,11 @@ let cors = require('cors')
 const req = require('express/lib/request')
 
 
-// enable cors
-app.use(cors())
 // create express app
 let app = express()
+
+// enable cors
+app.use(cors())
 
 // enable express app to use JSON content-type
 app.use(express.json())
