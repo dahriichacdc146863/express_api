@@ -2,8 +2,12 @@
 let express = require('express')
 let prog = require('./programming')
 let mongoose = require('mongoose')
+let cors = require('cors')
 const req = require('express/lib/request')
 
+
+// enable cors
+app.use(cors())
 // create express app
 let app = express()
 
